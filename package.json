@@ -32,12 +32,11 @@
     "webpack-cli": "^5.1.4"
   },
   "scripts": {
+    "build": "react-scripts build",
     "start": "webpack-dev-server --config webpack.config.js --open",
     "test": "jest",
     "test:watch": "jest --watch --maxWorkers=25%",
-    "test:ci": "jest --runInBand",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test:ci": "jest --runInBand"
   },
   "eslintConfig": {
     "extends": "react-app"
