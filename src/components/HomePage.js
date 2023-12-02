@@ -87,14 +87,24 @@ function HomePage() {
         });
       }
 
-      window.addEventListener('scroll', function() {
+      const scrollHandler = () => {
         lastScrollY = scrollEffectMobile(lastScrollY, innerHeader);
-      });
-  
+      };
+
+      window.addEventListener('scroll', scrollHandler);
+
+      const handleHashChange = () => {
+        const id = window.location.hash.replace('#', '');
+        const target = document.getElementById(id);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+      window.addEventListener('hashchange', handleHashChange);
+
       return () => {
-        window.removeEventListener('scroll', function() {
-          lastScrollY = scrollEffectMobile(lastScrollY, innerHeader);
-        });
+        window.removeEventListener('scroll', scrollHandler);
+        window.removeEventListener('hashchange', handleHashChange);
       };
   
     } else {
@@ -132,15 +142,25 @@ function HomePage() {
       const laptopButtonContainer = document.getElementById('laptopLayoutButtonContainer');
       const headerButtons = document.querySelectorAll('.headerButton img');
 
-      window.addEventListener('scroll', function() {
-        lastScrollY = scrollEffect(lastScrollY, body, innerHeader, introPage, laptopButtonContainer, headerButtons);//, body, innerHeader, introPage, laptopButtonContainer, headerButtons);
-      });
-  
-      return () => {
-        window.removeEventListener('scroll', function() {
-          lastScrollY = scrollEffect(lastScrollY, body, innerHeader, introPage, laptopButtonContainer, headerButtons);//, body, innerHeader, introPage, laptopButtonContainer, headerButtons);
-        });
-      };
+    const scrollHandler = () => {
+      lastScrollY = scrollEffect(lastScrollY, body, innerHeader, introPage, laptopButtonContainer, headerButtons);
+    };
+
+    window.addEventListener('scroll', scrollHandler);
+
+    const handleHashChange = () => {
+      const id = window.location.hash.replace('#', '');
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('scroll', scrollHandler);
+      window.removeEventListener('hashchange', handleHashChange);
+    };
   
     }
   }, []);
@@ -450,7 +470,7 @@ function HomePage() {
 // HTML FORMATTING
 
   return (
-    <body id='body'>
+    <div id='body'>
       <div id='canvas'></div>
 
 
@@ -739,7 +759,7 @@ function HomePage() {
         </div>
       </div>
       <div id="pageFooter"></div>
-    </body>
+    </div>
   );
 }
 
