@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/homePageStyles.css';
 
 function HomePage() {
@@ -661,9 +662,9 @@ function HomePage() {
           </div>
           <div id="workPageCardLayout">
             <div className="workPageCard">
-              <a className="cardImageWrapper" href="ai-authoring-engine-page.html">
+              <Link className="cardImageWrapper" to="/ai-authoring-engine">
                 <img className="cardImage" src="./engineCoverImage.jpg" alt="AI Authoring Engine"/>
-              </a>
+              </Link>
               <div>
                 <div id="cardDescription">
                   <div className='cardTitle'>AI Authoring Engine</div>
@@ -673,9 +674,9 @@ function HomePage() {
               </div>
             </div>
             <div className="workPageCard">
-              <a className="cardImageWrapper" href="/automated-publishing">
+              <Link className="cardImageWrapper" to="/automated-publishing">
                 <img className="cardImage" src="./aiPublishingCoverImage.jpg" alt="AI Story Autopublisher"/>
-              </a>
+              </Link>
               <div>
                 <div id="cardDescription">
                   <div className='cardTitle'>AI Story Autopublisher</div>
@@ -686,9 +687,9 @@ function HomePage() {
             </div>
             <div className="cardRowBreak" />
             <div className="workPageCard">
-              <a className="cardImageWrapper" href="/marketwatch-on-alexa">
+              <Link className="cardImageWrapper" to="/marketwatch-on-alexa">
                 <img className="cardImage" src="./alexaCoverImage.jpg" alt="MarketWatch on Alexa"/>
-              </a>
+              </Link>
               <div>
                 <div id="cardDescription">
                   <div className='cardTitle'>MarketWatch on Alexa</div>
@@ -698,9 +699,9 @@ function HomePage() {
               </div>
             </div>
             <div className="workPageCard">
-              <a className="cardImageWrapper" href="/watchlist-recaps">
+              <Link className="cardImageWrapper" to="/watchlist-recaps">
                 <img className="cardImage" src="./watchlistRecapCoverImage.jpg" alt="Watchlist Recaps"/>
-              </a>
+              </Link>
               <div>
                 <div id="cardDescription">
                   <div className='cardTitle'>Watchlist Recaps</div>
@@ -710,9 +711,9 @@ function HomePage() {
               </div>
             </div>
             <div className="workPageCard">
-              <a className="cardImageWrapper" href="/script-assist">
+              <Link className="cardImageWrapper" to="/script-assist">
                 <img className="cardImage" src="./scriptAssistCoverImage.jpg" alt="Gen AI ScriptAssist"/>
-              </a>
+              </Link>
               <div>
                 <div id="cardDescription">
                   <div className='cardTitle'>Gen AI ScriptAssist</div>

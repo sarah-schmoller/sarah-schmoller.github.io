@@ -17,8 +17,6 @@ function App() {
       <div className="App">
 
           <Routes>
-            <Route path="/*" element={<HomePage />}>
-            </Route>
             <Route path="/script-assist" element={<ScriptAssist />}>
             </Route>
             <Route path="/watchlist-recaps" element={<WatchlistRecaps />}>
@@ -28,6 +26,10 @@ function App() {
             <Route path="/automated-publishing" element={<AutomatedPublishing />}>
             </Route>
             <Route path="./protected" element={<Protected />}>
+            </Route>
+            <Route path="/" element={<HomePage />}>
+            </Route>
+            <Route path="*" element={<HomePage />}>
             </Route>
           </Routes>
 
