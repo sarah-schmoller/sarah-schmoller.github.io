@@ -17,7 +17,7 @@ function App() {
       <div className="App">
 
           <Routes>
-            <Route path="/" element={<HomePage />}>
+            <Route path="/*" element={<HomePage />}>
             </Route>
             <Route path="/script-assist" element={<ScriptAssist />}>
             </Route>
