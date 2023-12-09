@@ -662,9 +662,9 @@ function HomePage() {
           </div>
           <div id="workPageCardLayout">
             <div className="workPageCard">
-              <Link className="cardImageWrapper" to="/ai-authoring-engine">
+              <a className="cardImageWrapper" href="ai-authoring-engine-page.html">
                 <img className="cardImage" src="./engineCoverImage.jpg" alt="AI Authoring Engine"/>
-              </Link>
+              </a>
               <div>
                 <div id="cardDescription">
                   <div className='cardTitle'>AI Authoring Engine</div>
