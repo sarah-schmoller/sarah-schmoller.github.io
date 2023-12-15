@@ -655,6 +655,11 @@
 
     #aboutImage {
       max-width: 730px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      padding: 20px;
+      display: block;
     }
 
     #aboutImageContainer {
