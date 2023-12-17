@@ -583,7 +583,7 @@
     max-width: 1000px;
   }
 
-  #aboutImageContainer {
+  #aboutPageImageContainer {
     padding: 20px;
     width: 100%;
   }
@@ -662,12 +662,13 @@
       display: block;
     }
 
-    #aboutImageContainer {
+    #aboutPageImageContainer {
       align-items: center;
       display: flex;
       flex-basis: 100%;
       flex-direction: column;
       justify-content: center;
+      max-width: 730px;
     }
 
     #aboutPageTextContainer {
