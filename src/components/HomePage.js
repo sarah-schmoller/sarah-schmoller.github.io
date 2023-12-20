@@ -512,15 +512,11 @@ function HomePage() {
         <div id="headerMobile" class="innerHeaderMobile hiddenHeader">
           <nav id="buttonNav">
             <nav id="buttonDiv">
-              <ol id="              let header = document.getElementById('header');
-              // ...
-              if (!header.classList.contains('visibleHeader')) {
-                header.classList.toggle('visibleHeader');
-              }">
+              <ol id="headerButtonList">
                 <div class="alignRight">
-                <label for="menuToggle" id="menuIcon">
-                  <img class="homeButtonHeader" id="homeButtonHeaderRight" src="./hamburgerMenu.png" alt="Menu" />
-                </label>
+                  <label for="menuToggle" id="menuIcon">
+                    <img class="homeButtonHeader" id="homeButtonHeaderRight" src="./hamburgerMenu.png" alt="Menu" />
+                  </label>
                 </div>
               </ol>
             </nav>
