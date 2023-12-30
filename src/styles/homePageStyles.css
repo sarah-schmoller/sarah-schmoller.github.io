@@ -416,7 +416,7 @@
     width: 100vw;
     max-width: 500px;
     min-width: 300px;
-    top: 42%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -574,6 +574,10 @@
     top: -20px;
     right: -2px;
     position: absolute;
+  }
+
+  #message {
+    color: white;
   }
 
 
