@@ -416,7 +416,7 @@
     width: 100vw;
     max-width: 500px;
     min-width: 300px;
-    top: 44%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -711,7 +711,9 @@
   /* Special handling when the window is smaller than 400px */
   @media (max-width: 400px) {
     #aboutParagraph {
-      font-size: 15px;
+      font-size: 16px;
+      margin-left: 5px;
+      margin-right: 3px;
     }
   }
 
