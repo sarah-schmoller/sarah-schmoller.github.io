@@ -706,6 +706,10 @@
     #aboutParagraph {
       font-size: calc(3.7vw);
     }
+
+    #aboutPage {
+      padding-top: 10vw;
+    }
   }
 
   /* Special handling when the window is smaller than 400px */
@@ -714,6 +718,10 @@
       font-size: 16px;
       margin-left: 5px;
       margin-right: 3px;
+    }
+
+    #aboutPage {
+      padding-top: 10vw;
     }
   }
 
