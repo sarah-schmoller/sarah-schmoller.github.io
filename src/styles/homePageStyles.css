@@ -702,18 +702,19 @@
   }
 
   /* Special handling when the window is larger than 400px but smaller than 485px */
-  @media (min-width: 400px) and (max-width: 485px) {
+  @media (min-width: 425px) and (max-width: 485px) {
     #aboutParagraph {
       font-size: calc(3.7vw);
     }
 
     #aboutPage {
-      padding-top: 10vw;
+      padding-top: 7vw;
+      padding-bottom: 15vw;
     }
   }
 
   /* Special handling when the window is smaller than 400px */
-  @media (max-width: 400px) {
+  @media (max-width: 425px) {
     #aboutParagraph {
       font-size: 16px;
       margin-left: 5px;
@@ -721,7 +722,8 @@
     }
 
     #aboutPage {
-      padding-top: 10vw;
+      padding-top: 7vw;
+      padding-bottom: 15vw;
     }
   }
 
