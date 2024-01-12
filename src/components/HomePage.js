@@ -43,7 +43,7 @@ function HomePage() {
     let contactPage = document.getElementById('contactPage');
     let lastScrollY = window.scrollY;
 
-    isMobile = true;
+    isMobile = isMobile();
     if (isMobile) {
 
       handleMobileMenu()
