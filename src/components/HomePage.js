@@ -529,11 +529,11 @@ function HomePage() {
           <label for="menuToggle" class="closeMenu">
             <span>&#215;</span>
           </label>
-          <a class="list" href="/PortfolioSite/"><span>Home</span></a>
-          <a class="list" href="/PortfolioSite/#aboutPage"><span>About</span></a>
-          <a class="list" href="/PortfolioSite/#workPage"><span>Work</span></a>
-          <a class="list" href="/PortfolioSite/#contactPage"><span>Contact</span></a>
-          <a class="list" href="/PortfolioSite/#resumePage"><span>Resume</span></a>
+          <a class="list" href="."><span>Home</span></a>
+          <a class="list" href="#aboutPage"><span>About</span></a>
+          <a class="list" href="#workPage"><span>Work</span></a>
+          <a class="list" href="#contactPage"><span>Contact</span></a>
+          <a class="list" href="#resumePage"><span>Resume</span></a>
         </div>
       </div>
 
@@ -554,15 +554,15 @@ function HomePage() {
             ))}
           </div>
           <div id="laptopLayoutButtonContainer">
-            <a id="laptopLayoutHomeButton" href="/PortfolioSite/" ><img src="./homeButton.png" alt="Home"/></a>
-            <a id="laptopLayoutAboutButton" href="/PortfolioSite/#aboutPage"><img src="./aboutButton.png" alt="About"/></a>
-            <a id="laptopLayoutWorkButton" href="/PortfolioSite/#workPageContainer"><img src="./workButton.png" alt="Work"/></a>
-            <a id="laptopLayoutContactButton" href="/PortfolioSite/#pageFooter"><img src="./contactButton.png" alt="Contact"/></a>
-            <a id="laptopLayoutResumeButton" href="/PortfolioSite/#resumePage"><img src="./resumeButton.png" alt="Resume"/></a>
+            <a id="laptopLayoutHomeButton" href="." ><img src="./homeButton.png" alt="Home"/></a>
+            <a id="laptopLayoutAboutButton" href="#aboutPage"><img src="./aboutButton.png" alt="About"/></a>
+            <a id="laptopLayoutWorkButton" href="#workPageContainer"><img src="./workButton.png" alt="Work"/></a>
+            <a id="laptopLayoutContactButton" href="#pageFooter"><img src="./contactButton.png" alt="Contact"/></a>
+            <a id="laptopLayoutResumeButton" href="#resumePage"><img src="./resumeButton.png" alt="Resume"/></a>
           </div>
         </div>
         <svg id="introPageNavArrow" viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-          <a id="introPageNavArrowLink" href="/PortfolioSite/#aboutPage">
+          <a id="introPageNavArrowLink" href="#aboutPage">
             <rect x="680" y="0" width="80" height="80" fill="transparent"></rect>     
             <g class="introPageScrollIndicator" transform="translate(710, 0)">
               <path d="M6 8L12 16L18 8H6Z" fill="#7a839c"></path>
