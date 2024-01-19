@@ -1,22 +1,19 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Redirecting…</title>
-    <script>
-      // Redirect all 404s to index.html while preserving the path
-      var pathname = window.location.pathname;
-      var search = window.location.search;
-      var hash = window.location.hash;
-
-      var base = "/PortfolioSite";
-
-      window.location.replace(
-        base +
-          "/?redirect=" +
-          encodeURIComponent(pathname.replace(base, "") + search + hash)
-      );
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Sarah Schmoller</title>
   </head>
-  <body></body>
+  <body class="portfolio">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>
