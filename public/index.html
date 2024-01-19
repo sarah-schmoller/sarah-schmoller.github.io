@@ -11,16 +11,6 @@
     <link rel="icon" href="./favicon.ico" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Sarah Schmoller</title>
-    <script>
-      (function () {
-        var params = new URLSearchParams(window.location.search);
-        var redirect = params.get("redirect");
-
-        if (redirect) {
-          window.history.replaceState(null, "", redirect);
-        }
-      })();
-    </script>
   </head>
   <body class="portfolio">
     <noscript>You need to enable JavaScript to run this app.</noscript>
