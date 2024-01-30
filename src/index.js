@@ -6,8 +6,8 @@ import { HashRouter } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-    <BrowserRouter basename="/PortfolioSite">
-      <App />
-    </BrowserRouter>,
+  <BrowserRouter basename="/PortfolioSite">
+    <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );
