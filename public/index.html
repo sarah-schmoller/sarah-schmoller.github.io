@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="/PortfolioSite/" />
     <script>
       (function () {
         var params = new URLSearchParams(window.location.search);
         var redirect = params.get("redirect");
         if (redirect) {
-          // restore the URL in the address bar
+          // restore the full URL including /PortfolioSite
           window.history.replaceState(null, "", redirect);
         }
       })();
@@ -15,12 +14,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="icon" href="./favicon.ico" />
-    <link rel="manifest" href="./manifest.json" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="icon" href="/PortfolioSite/favicon.ico" />
+    <link rel="manifest" href="/PortfolioSite/manifest.json" />
     <title>Sarah Schmoller</title>
   </head>
   <body class="portfolio">
