@@ -10,11 +10,11 @@
       var hash = window.location.hash;
 
       // GitHub Pages project site basename
-      var base = "/PortfolioSite";
+      var baseURL = "https://sarah-schmoller.github.io/PortfolioSite";
 
       // redirect to index.html with original path in query
       window.location.replace(
-        base + "/index.html?redirect=" + encodeURIComponent(pathname.replace(base, "") + search + hash)
+        baseURL + "/index.html?redirect=" + encodeURIComponent(pathname.replace("/PortfolioSite", "") + search + hash)
       );
     </script>
   </head>
