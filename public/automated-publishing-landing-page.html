@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Story Autopublisher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* PROJECT PAGE */
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #projectPage {
+      background: #171b22;
+      height: 100vh;
+      min-height: 750px;
+      overflow: scroll;
+      width: 100vw;
+      z-index: 100;
+    }
+
+    #projectPageContainer {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 100px;
+    }
+
+    .projectPageContainer {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 80px;
+      position: relative;
+    }
+
+    .projectDescriptionContainer {
+      margin: 0 auto;
+      max-width: 900px;
+      overflow: hidden;
+      padding: 0 16px;
+      padding-bottom: 50px;
+      padding-top: 40px;
+      width: 100%;
+    }
+
+    .aiStoryImage {
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 8px;
+      flex-shrink: 0;
+      float: right;
+      height: auto;
+      margin-bottom: 12px;
+      margin-left: 24px;
+      object-fit: cover;
+      width: 400px;
+    }
+
+    .watchlistRecapImage {
+      float: right;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-left: 24px;
+      margin-bottom: 12px;
+      margin-top: 15px;
+      border: 1px solid rgb(255, 255, 255);
+      width: 400px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .scriptAssistImage {
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      border: 1px solid rgb(255, 255, 255);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 700px;
+    }
+
+    .alexaSkillImage {
+      float: right;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-left: 24px;
+      margin-bottom: 30px;
+    }
+
+    #alexaSkillStoreImage {
+      border: 1px solid rgb(255, 255, 255);
+      margin-top: 15px;
+    }
+
+    #projectTitle {
+      color: rgb(142, 176, 227);
+      font-family: "Roboto Mono", monospace !important;
+      font-size: 28px;
+      z-index: 10;
+      font-weight: 600;
+      margin-bottom: 25px;
+      position: static;
+      top: unset;
+      text-align: center;
+      width: 100%;
+    }
+
+    #projectTitleImage {
+      display: block;
+      margin: 0 auto 16px auto;
+      height: 150px;
+      position: static;
+      left: unset;
+      transform: none;
+    }
+
+    .descriptionFlexWrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 200px;
+      width: 100%;
+      max-width: 900px;
+      position: relative;
+      z-index: 10;
+    }
+
+    #projectDescription {
+      color: rgba(255, 255, 255, .75);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.75;
+      text-align: justify;
+      margin-right: 30px;
+      margin-left: 0;
+      margin-top: 0;
+      position: static;
+      flex: 2 1 0;
+      min-width: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .projectDescription {
+      color: rgba(255, 255, 255, .75);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.75;
+      text-align: justify;
+      padding-bottom: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    #alexaSkillImageContainer {
+      margin-top: 25px;
+    }
+
+    .homeButtonProjectPage {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      display: block;
+    }
+    .homeButtonProjectPage img {
+      width: 55px;
+      height: 55px;
+    }
+
+    @media (max-width: 800px) {
+      .descriptionFlexWrap {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 140px;
+      }
+      #projectDescription {
+        margin-right: 0;
+        margin-bottom: 18px;
+        text-align: center;
+      }
+      .aiStoryImage {
+        margin-left: 0;
+        margin-bottom: 0;
+        height: 140px;
+      }
+    }
+
+    @media (min-height: 800px) {
+      #projectPageContainer {
+        top: 100px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .aiStoryImage {
+        float: none;
+        display: block;
+        margin: 0 auto 16px auto;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
+      .projectDescriptionContainer {
+        padding: 0 16px;
+        padding-top: 40px;
+      }
+    }
+
+    @media (max-width: 730px) {
+      .scriptAssistImage {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .techTilesContainer {
+      display: flex;
+      gap: 12px;
+      margin: 5px 0 10px 0;
+      flex-wrap: wrap;
+      max-width: 900px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+    }
+
+    .techTile {
+      background: #f3f3fa;
+      color: rgb(126, 163, 219);
+      border-radius: 18px;
+      padding: 6px 15px;
+      font-weight: 500;
+      font-size: 1rem;
+      box-shadow: 0 1px 4px rgba(75,42,173,0.08);
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      border: 1px solid #e0e0f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .techTile:hover {
+      background: rgb(142, 176, 227);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(75,42,173,0.18);
+      border-color: rgb(142, 176, 227);
+    }
+  </style>
+</head>
+<body>
+  <div id="body">
+    <div id="canvas"></div>
+    <div id="projectPage">
+      <div class="projectPageContainer">
+        <a class="homeButtonProjectPage" href=".">
+          <img src="./homeImage.png" alt="Home" />
+        </a>
+        <img id="projectTitleImage" src="./publicationLogo.png" alt="Profile Image"/>
+        <div id="projectTitle"><span>AI Story Autopublisher</span></div>
+        <div class="techTilesContainer">
+          <div class="techTile">AWS Lambda</div>
+          <div class="techTile">AWS Step Function</div>
+          <div class="techTile">AWS DynamoDB</div>
+          <div class="techTile">Node.js</div>
+          <div class="techTile">C#</div>
+          <div class="techTile">SQL</div>
+          <div class="techTile">Terraform</div>
+        </div>
+        <div class="projectDescriptionContainer">
+          <img class="aiStoryImage" src="./aiStoryImage.png" alt="A.I. Story"/>
+          <div class="projectDescription">
+            <span>
+              The AI Story Autopublisher is the product I have worked on the longest as technical lead for Dow Jones’ AI Content Generation team. This represented the first of the our efforts towards automated article generation when the team was founded in 2020, and has developed into an expansive framework managing production of many different types of AI content. The system is composed of a multi-step process built on AWS lambda functions, and orchestrated by step functions. Market data is pulled from various sources and parsed; the data is fed into an AI article generation system, which outputs new story text; and finally, the text is formatted for publication and sent off for display on one of Dow Jones’ product sites.
+            </span>
+          </div>
+          <div class="projectDescription">
+            <span>
+              When development on this system first began, the generative AI component was outsourced to a third party vendor. As our infrastructure improved and advanced, I led the development of 
+              <a href="ai-authoring-engine-page.html" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">
+                additional tools
+              </a>
+              which now allow us to generate story text in-house, both via the branching logic of rules-engine AI and via large language models. Both methods are employed in our work, with the specifics depending on the use case and the end recipient of the articles.
+            </span>
+          </div>
+          <div class="projectDescription">
+            <span>
+              As of 2023, this automated content generation and publishing system produced 90% of the articles surfaced daily on 
+              <a href="https://www.marketwatch.com/author/marketwatch-automation" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">
+                MarketWatch.com
+              </a>, generating upwards of a million new pageviews per month. In 2025 new story development shifted to Dow Jones’ NewsWires, where over 400 automated stories are now published each day. Additional articles are generated regularly for 
+              <a href="https://www.barrons.com/authors/barrons-automation" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">
+                Barrons.com
+              </a>, Mansion Global, and the Dow Jones Oil Price Information Service (OPIS).
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
