@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watchlist Recaps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* PROJECT PAGE */
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #projectPage {
+      background: #171b22;
+      height: 100vh;
+      min-height: 750px;
+      overflow: scroll;
+      width: 100vw;
+      z-index: 100;
+    }
+
+    #projectPageContainer {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 100px;
+    }
+
+    .projectPageContainer {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 80px;
+      position: relative;
+    }
+
+    .projectDescriptionContainer {
+      margin: 0 auto;
+      max-width: 900px;
+      overflow: hidden;
+      padding: 0 16px;
+      padding-bottom: 50px;
+      padding-top: 40px;
+      width: 100%;
+    }
+
+    .aiStoryImage {
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 8px;
+      flex-shrink: 0;
+      float: right;
+      height: auto;
+      margin-bottom: 12px;
+      margin-left: 24px;
+      object-fit: cover;
+      width: 400px;
+    }
+
+    .watchlistRecapImage {
+      float: right;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-left: 24px;
+      margin-bottom: 12px;
+      margin-top: 15px;
+      border: 1px solid rgb(255, 255, 255);
+      width: 400px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .scriptAssistImage {
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      border: 1px solid rgb(255, 255, 255);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 700px;
+    }
+
+    .alexaSkillImage {
+      float: right;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-left: 24px;
+      margin-bottom: 30px;
+    }
+
+    #alexaSkillStoreImage {
+      border: 1px solid rgb(255, 255, 255);
+      margin-top: 15px;
+    }
+
+    #projectTitle {
+      color: rgb(142, 176, 227);
+      font-family: "Roboto Mono", monospace !important;
+      font-size: 28px;
+      z-index: 10;
+      font-weight: 600;
+      margin-bottom: 25px;
+      position: static;
+      top: unset;
+      text-align: center;
+      width: 100%;
+    }
+
+    #projectTitleImage {
+      display: block;
+      margin: 0 auto 16px auto;
+      height: 150px;
+      position: static;
+      left: unset;
+      transform: none;
+    }
+
+    .descriptionFlexWrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 200px;
+      width: 100%;
+      max-width: 900px;
+      position: relative;
+      z-index: 10;
+    }
+
+    #projectDescription {
+      color: rgba(255, 255, 255, .75);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.75;
+      text-align: justify;
+      margin-right: 30px;
+      margin-left: 0;
+      margin-top: 0;
+      position: static;
+      flex: 2 1 0;
+      min-width: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .projectDescription {
+      color: rgba(255, 255, 255, .75);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.75;
+      text-align: justify;
+      padding-bottom: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    #alexaSkillImageContainer {
+      margin-top: 25px;
+    }
+
+    .homeButtonProjectPage {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      display: block;
+    }
+    .homeButtonProjectPage img {
+      width: 55px;
+      height: 55px;
+    }
+
+    @media (max-width: 800px) {
+      .descriptionFlexWrap {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 140px;
+      }
+      #projectDescription {
+        margin-right: 0;
+        margin-bottom: 18px;
+        text-align: center;
+      }
+      .aiStoryImage {
+        margin-left: 0;
+        margin-bottom: 0;
+        height: 140px;
+      }
+    }
+
+    @media (min-height: 800px) {
+      #projectPageContainer {
+        top: 100px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .aiStoryImage {
+        float: none;
+        display: block;
+        margin: 0 auto 16px auto;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
+      .projectDescriptionContainer {
+        padding: 0 16px;
+        padding-top: 40px;
+      }
+    }
+
+    @media (max-width: 730px) {
+      .scriptAssistImage {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .techTilesContainer {
+      display: flex;
+      gap: 12px;
+      margin: 5px 0 10px 0;
+      flex-wrap: wrap;
+      max-width: 900px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+    }
+
+    .techTile {
+      background: #f3f3fa;
+      color: rgb(126, 163, 219);
+      border-radius: 18px;
+      padding: 6px 15px;
+      font-weight: 500;
+      font-size: 1rem;
+      box-shadow: 0 1px 4px rgba(75,42,173,0.08);
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      border: 1px solid #e0e0f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .techTile:hover {
+      background: rgb(142, 176, 227);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(75,42,173,0.18);
+      border-color: rgb(142, 176, 227);
+    }
+  </style>
+</head>
+<body>
+  <div id="body">
+    <div id="canvas"></div>
+    <div id="projectPage">
+      <div class="projectPageContainer">
+        <a class="homeButtonProjectPage" href=".">
+          <img src="./homeImage.png" alt="Home" />
+        </a>
+        <img id="projectTitleImage" src="./watchlistRecapLogo.png" alt="Profile Image"/>
+        <div id="projectTitle"><span>Watchlist Recaps</span></div>
+        <div class="techTilesContainer">
+          <div class="techTile">AWS Lambda</div>
+          <div class="techTile">AWS Step Function</div>
+          <div class="techTile">AWS Api Gateway</div>
+          <div class="techTile">AWS DynamoDB</div>
+          <div class="techTile">Amazon Polly</div>
+          <div class="techTile">Node.js</div>
+          <div class="techTile">TypeScript</div>
+          <div class="techTile">React</div>
+          <div class="techTile">Terraform</div>
+        </div>
+        <div class="projectDescriptionContainer">
+          <img class="watchlistRecapImage" src="./watchlistRecapImage.png" alt="A.I. Story"/>
+          <div class="projectDescription">
+            <span>
+              MarketWatch.com’s watchlist feature is an established offering for individual site users, allowing them to log in and define personalized lists of instruments they wish to keep track of. In 2022, I was asked to lead development on the backend for a weekly recap addition extending watchlist functionality by providing customers with more detailed insights. The recap would include graphs and other graphics summarizing important aspects of a watchlist's performance, along with a text summary which could be played aloud as a sound bite.
+            </span>
+          </div>
+          <div class="projectDescription">
+            <span>
+              These watchlist recaps served as an early foray into developing a robust system for branching in-house text generation.  Shorter captions are generated via simple conditional logic, but I also designed a templated narrative-generation prototype to produce a more complex paragraph overview. This is provided alongside an audio reading performed by Amazon Polly. I discuss in-house narrative generation further in my summary of the AI Authoring Engine project.
+            </span>
+          </div>
+          <div class="projectDescription">
+            <span>
+              The system architecture I designed encompassed not only the rules-engine AI logic for narrative generation, but also substantial infrastructure for management of instrument data. It was essential to consider the impact of a large number of users accessing the recaps at the same time; if unique real-time stock data was provided for each user upon visiting, internal APIs could easily be overloaded. For that reason, I settled on a snapshot design, in which a lambda job is run weekly to store new company information in Amazon’s DynamoDB. This strategy has ensured that the system is scalable to an infinite number of users, without concern for downstream capacity limits. Both data and text elements are surfaced via apis built on AWS lambdas.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

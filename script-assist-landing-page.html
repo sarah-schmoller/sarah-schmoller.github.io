@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Script Assist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* PROJECT PAGE */
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #projectPage {
+      background: #171b22;
+      height: 100vh;
+      min-height: 750px;
+      overflow: scroll;
+      width: 100vw;
+      z-index: 100;
+    }
+
+    #projectPageContainer {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 100px;
+    }
+
+    .projectPageContainer {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 80px;
+      position: relative;
+    }
+
+    .projectDescriptionContainer {
+      margin: 0 auto;
+      max-width: 900px;
+      overflow: hidden;
+      padding: 0 16px;
+      padding-bottom: 50px;
+      padding-top: 40px;
+      width: 100%;
+    }
+
+    .aiStoryImage {
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 8px;
+      flex-shrink: 0;
+      float: right;
+      height: auto;
+      margin-bottom: 12px;
+      margin-left: 24px;
+      object-fit: cover;
+      width: 400px;
+    }
+
+    .watchlistRecapImage {
+      float: right;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-left: 24px;
+      margin-bottom: 12px;
+      margin-top: 15px;
+      border: 1px solid rgb(255, 255, 255);
+      width: 400px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .scriptAssistImage {
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      border: 1px solid rgb(255, 255, 255);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 700px;
+    }
+
+    .alexaSkillImage {
+      float: right;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-left: 24px;
+      margin-bottom: 30px;
+    }
+
+    #alexaSkillStoreImage {
+      border: 1px solid rgb(255, 255, 255);
+      margin-top: 15px;
+    }
+
+    #projectTitle {
+      color: rgb(142, 176, 227);
+      font-family: "Roboto Mono", monospace !important;
+      font-size: 28px;
+      z-index: 10;
+      font-weight: 600;
+      margin-bottom: 25px;
+      position: static;
+      top: unset;
+      text-align: center;
+      width: 100%;
+    }
+
+    #projectTitleImage {
+      display: block;
+      margin: 0 auto 16px auto;
+      height: 150px;
+      position: static;
+      left: unset;
+      transform: none;
+    }
+
+    .descriptionFlexWrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 200px;
+      width: 100%;
+      max-width: 900px;
+      position: relative;
+      z-index: 10;
+    }
+
+    #projectDescription {
+      color: rgba(255, 255, 255, .75);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.75;
+      text-align: justify;
+      margin-right: 30px;
+      margin-left: 0;
+      margin-top: 0;
+      position: static;
+      flex: 2 1 0;
+      min-width: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .projectDescription {
+      color: rgba(255, 255, 255, .75);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.75;
+      text-align: justify;
+      padding-bottom: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    #alexaSkillImageContainer {
+      margin-top: 25px;
+    }
+
+    .homeButtonProjectPage {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      display: block;
+    }
+    .homeButtonProjectPage img {
+      width: 55px;
+      height: 55px;
+    }
+
+    @media (max-width: 800px) {
+      .descriptionFlexWrap {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 140px;
+      }
+      #projectDescription {
+        margin-right: 0;
+        margin-bottom: 18px;
+        text-align: center;
+      }
+      .aiStoryImage {
+        margin-left: 0;
+        margin-bottom: 0;
+        height: 140px;
+      }
+    }
+
+    @media (min-height: 800px) {
+      #projectPageContainer {
+        top: 100px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .aiStoryImage {
+        float: none;
+        display: block;
+        margin: 0 auto 16px auto;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
+      .projectDescriptionContainer {
+        padding: 0 16px;
+        padding-top: 40px;
+      }
+    }
+
+    @media (max-width: 730px) {
+      .scriptAssistImage {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .techTilesContainer {
+      display: flex;
+      gap: 12px;
+      margin: 5px 0 10px 0;
+      flex-wrap: wrap;
+      max-width: 900px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+    }
+
+    .techTile {
+      background: #f3f3fa;
+      color: rgb(126, 163, 219);
+      border-radius: 18px;
+      padding: 6px 15px;
+      font-weight: 500;
+      font-size: 1rem;
+      box-shadow: 0 1px 4px rgba(75,42,173,0.08);
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      border: 1px solid #e0e0f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .techTile:hover {
+      background: rgb(142, 176, 227);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(75,42,173,0.18);
+      border-color: rgb(142, 176, 227);
+    }
+  </style>
+</head>
+<body>
+  <div id="body">
+    <div id="canvas"></div>
+    <div id="projectPage">
+      <div class="projectPageContainer">
+        <a class="homeButtonProjectPage" href=".">
+          <img src="./homeImage.png" alt="Home" />
+        </a>
+        <img id="projectTitleImage" src="./scriptLogo.png" alt="Profile Image"/>
+        <div id="projectTitle"><span>Script Assist</span></div>
+        <div class="techTilesContainer">
+          <div class="techTile">Javascript</div>
+          <div class="techTile">Python</div>
+          <div class="techTile">React</div>
+          <div class="techTile">GPT-2</div>
+        </div>
+        <div class="projectDescriptionContainer">
+          <div class="projectDescription">
+            <span>
+              <a href="https://variety.com/2018/digital/news/xandra-voice-experiences-alexa-google-home-1202917582" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">
+                Xandra, Inc.
+              </a> was a small conversation design studio based in New York between the years 2017 and 2021. It specialized in producing interactive storytelling experiences using branching narratives, which were published as skills on Amazon Alexa. During its years in operation, Xandra worked as a contractor for brands like Google, HBO, and Nickelodeon, with many projects covering major media properties such as Westworld and The Walking Dead.
+            </span>
+          </div>
+          <div class="projectDescription">
+            <span>
+              In 2020, with LLMs still in their infancy, I interned for Xandra as an NLG Engineer, helping them to explore ways that AI might be used to facilitate their work. The company had been looking into using AI models to aid conversation designers in writing scripts, and I was tasked with building a prototype authorial assist tool using GPT-2.&nbsp;
+            </span>
+            <img class="scriptAssistImage" src="./demo.gif" alt="A.I. Story"/>
+            <span>
+              While this kind of system is fairly commonplace today, it was a very novel and exciting concept in 2020 when we were first investigating uses for these models. Our hope was that the completed tool would not only allow users to auto-generate turns of dialog throughout the writing process, but also to generate turns within a specific designated personality type.
+            </span>
+          </div>
+          <div class="projectDescription">
+            <span>
+              To achieve this, I designed a simple Python application which generated dialog on the basis of customized context blocks. For the purposes of the prototype, I used the writing styles of famous authors as a stand-in for personality. I would take a dialog excerpt from each author’s writings and save it in a text file. As the user authored additional turns, they would be appended to this existing context file. This would be passed in with the call to GPT-2, which would then take both the provided style and the subsequent user-authored turns into account when generating the next turn of text, ensuring that the text was both stylistically appropriate and relevant. I built out a simple React frontend to allow non-developers to interact with the system.
+            </span>
+          </div>
+          <div class="projectDescription">
+            <span>
+              The code for my finished prototype can be found <a href="https://github.com/sarah-schmoller/ScriptAssist" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">
+                here
+              </a>.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
