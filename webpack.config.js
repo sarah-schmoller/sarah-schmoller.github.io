@@ -16,7 +16,7 @@ module.exports = {
         use: {
           loader: 'html-loader',
         },
-        include: ['/Users/schmollers/GitHubPersonal/PortfolioSite/src/components/'],
+        include: ['/Users/schmollers/GitHubPersonal/sarah-schmoller.github.io/src/components/'],
         exclude: ['/node_modules/'],
       },
       {
