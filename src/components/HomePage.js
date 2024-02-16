@@ -602,7 +602,7 @@ function HomePage() {
                   <div id="timestamp">
                     <span id="currentTime"></span>
                   </div>
-                  <div id="message">
+                  <div id="textMessageMobile">
                     <span>Hey there! My name is Sarah. I write software that tells stories. Tap here to see my work -></span>
                   </div>
                 </div>
@@ -737,7 +737,7 @@ function HomePage() {
                 <input type="email" name="email" id="contactPageEmailField" class="contactPageFormControl" placeholder="Email"></input>
               </div>
               <div class="contactPageFullField">
-                <textarea name="message" id="message" rows="5" class="contactPageFormControl" placeholder="Message"></textarea>
+                <textarea name="message" id="contactMessage" rows="5" class="contactPageFormControl" placeholder="Message"></textarea>
               </div>
               <button class="contactPageSubmitButton" type="submit" label="Send Message">Send Message</button>
             </div>

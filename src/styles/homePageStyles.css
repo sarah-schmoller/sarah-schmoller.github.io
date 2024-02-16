@@ -577,7 +577,11 @@
     position: absolute;
   }
 
-  #message {
+  #textMessageMobile {
+    color: white;
+  }
+
+  #contactMessage {
     color: black;
   }
 
