@@ -546,7 +546,7 @@ function HomePage() {
                   <a class='headerButton' href='#pageFooter'>
                     <img class='headerButtonImage' src='./contactButton.png' alt='Contact' />
                   </a>
-                  <a class='headerButton' href='#resumePage'>
+                  <a class='headerButton' href='./resume.pdf'>
                     <img class='headerButtonImage' src='./resumeButton.png' alt='Resume' />
                   </a>
                 </div>
@@ -583,7 +583,7 @@ function HomePage() {
           <a class="list" href="#aboutPage"><span>About</span></a>
           <a class="list" href="#workPage"><span>Work</span></a>
           <a class="list" href="#contactPage"><span>Contact</span></a>
-          <a class="list" href="#resumePage"><span>Resume</span></a>
+          <a class="list" href="./resume.pdf"><span>Resume</span></a>
         </div>
       </div>
 
@@ -608,7 +608,7 @@ function HomePage() {
             <a id="laptopLayoutAboutButton" href="#aboutPage"><img src="./aboutButton.png" alt="About"/></a>
             <a id="laptopLayoutWorkButton" href="#workPageContainer"><img src="./workButton.png" alt="Work"/></a>
             <a id="laptopLayoutContactButton" href="#pageFooter"><img src="./contactButton.png" alt="Contact"/></a>
-            <a id="laptopLayoutResumeButton" href="#resumePage"><img src="./resumeButton.png" alt="Resume"/></a>
+            <a id="laptopLayoutResumeButton" href="./resume.pdf"><img src="./resumeButton.png" alt="Resume"/></a>
           </div>
         </div>
         <svg id="introPageNavArrow" viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -634,7 +634,7 @@ function HomePage() {
             <a id="aboutButton" class="mobileButton" href="#aboutPage"><img src="./aboutButton.png" alt="About"/></a>
             <a id="workButton" class="mobileButton" href="#workPageContainer"><img src="./workButton.png" alt="Work"/></a>
             <a id="contactButton" class="mobileButton" href="#pageFooter"><img src="./contactButton.png" alt="Contact"/></a>
-            <a id="resumeButton" class="mobileButton" href="#resumePage"><img src="./resumeButton.png" alt="Resume"/></a>
+            <a id="resumeButton" class="mobileButton" href="./resume.pdf"><img src="./resumeButton.png" alt="Resume"/></a>
           </div>
           <div id="messagesTitle"></div>
           <div id="label">
