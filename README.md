@@ -21,25 +21,25 @@ This website serves as my personal portfolio and a place to share my professiona
 
 You'll find:
 
-Professional Background: My experience building and leading software engineering projects.
+  - Professional Background: My experience building and leading software engineering projects.
 
-Project Portfolio: Selected projects involving AI, natural language generation, automation, and cloud infrastructure.
+  - Project Portfolio: Selected projects involving AI, natural language generation, automation, and cloud infrastructure.
 
-Technical Interests: Areas of software engineering and emerging technology that I'm passionate about.
+  - Technical Interests: Areas of software engineering and emerging technology that I'm passionate about.
 
-Contact Information: Ways to connect with me professionally.
+  - Contact Information: Ways to connect with me professionally.
 
 ### Featured Work
 
 My professional experience includes developing:
 
-AI Narrative Authoring Systems: Tools that combine deterministic rules engines with large language models to generate dynamic, data-driven narratives.
+  - AI Narrative Authoring Systems: Tools that combine deterministic rules engines with large language models to generate dynamic, data-driven narratives.
 
-Automated Publishing Infrastructure: Scalable AWS-based pipelines supporting high-volume content generation and publication.
+  - Automated Publishing Infrastructure: Scalable AWS-based pipelines supporting high-volume content generation and publication.
 
-AI-Powered Storytelling Tools: Applications exploring how software can support creative expression and interactive experiences.
+  - AI-Powered Storytelling Tools: Applications exploring how software can support creative expression and interactive experiences.
 
-Additional details and selected projects are available on my website.
+  - Additional details and selected projects are available on my website.
 
 ### Design & Artwork
 
@@ -47,9 +47,9 @@ All original illustrations, graphics, and visual assets featured on this website
 
 ### Connect
 
-Website: sarahschmoller.com
+Website: [sarahschmoller.com](https://www.sarahschmoller.com/)
 
-GitHub: github.com/sarahschmoller
+GitHub: [github.com/sarahschmoller](https://github.com/sarah-schmoller/sarah-schmoller.github.io)
 
 License
 
