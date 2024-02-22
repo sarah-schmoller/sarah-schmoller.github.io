@@ -3,9 +3,9 @@
 
 Source code for my personal website and software engineering portfolio.
 
-Live Site: sarahschmoller.com
+Live Site: [sarahschmoller.com](https://www.sarahschmoller.com/)
 
-About Me
+### About Me
 
 I'm a software engineer specializing in AI-powered content generation, natural language generation (NLG), and scalable cloud-based systems.
 
@@ -15,7 +15,7 @@ I'm particularly interested in the intersection of software engineering, artific
 
 I write software that tells stories.
 
-## About This Website
+### About This Website
 
 This website serves as my personal portfolio and a place to share my professional experience, technical projects, and interests.
 
@@ -29,7 +29,7 @@ Technical Interests: Areas of software engineering and emerging technology that 
 
 Contact Information: Ways to connect with me professionally.
 
-## Featured Work
+### Featured Work
 
 My professional experience includes developing:
 
@@ -41,11 +41,11 @@ AI-Powered Storytelling Tools: Applications exploring how software can support c
 
 Additional details and selected projects are available on my website.
 
-## Design & Artwork
+### Design & Artwork
 
 All original illustrations, graphics, and visual assets featured on this website were created by me. The site was designed and developed as a personal project, combining my interests in software engineering, visual design, and digital storytelling.
 
-Connect
+### Connect
 
 Website: sarahschmoller.com
 
