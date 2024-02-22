@@ -41,6 +41,10 @@ AI-Powered Storytelling Tools: Applications exploring how software can support c
 
 Additional details and selected projects are available on my website.
 
+## Design & Artwork
+
+All original illustrations, graphics, and visual assets featured on this website were created by me. The site was designed and developed as a personal project, combining my interests in software engineering, visual design, and digital storytelling.
+
 Connect
 
 Website: sarahschmoller.com
