@@ -5,6 +5,8 @@ Source code for my personal website and software engineering portfolio.
 
 Live Site: [sarahschmoller.com](https://www.sarahschmoller.com/)
 
+![](https://github.com/sarah-schmoller/sarah-schmoller.github.io/blob/main/screenshot.jpg)
+
 ### About Me
 
 I'm a software engineer specializing in AI-powered content generation, natural language generation (NLG), and scalable cloud-based systems.
